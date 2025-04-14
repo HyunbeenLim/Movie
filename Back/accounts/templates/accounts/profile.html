@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>유저 상세 정보</h1>
+<p>유저 id: {{ person.username }} </p>
+
+<div>팔로잉: {{ person.followings.all|length }} / 팔로워: {{ person.followers.all|length }} </div>
+{% if request.user != person %}
+<div>
+    <form action="{% url "accounts:follow" person.pk %}" method="POST">
+        {% csrf_token %}
+        {% if request.user in person.followers.all %}
+        <input type="submit" value="팔로우 취소">
+        {% else %}
+        <input type="submit" value="팔로우">
+        {% endif %}
+    </form>
+</div>
+{% endif %}
+
+{% comment %} 여기에 좋아요/리뷰한 영화 목록이 나올 수 있게 하면 좋을 듯 {% endcomment %}
+
+{% if request.user == person %}
+<a href="{% url "accounts:logout" %}">로그아웃</a>
+<br>
+<a href="{% url "accounts:account_delete" %}">회원 탈퇴</a>
+<br>
+<a href="{% url "accounts:account_update" %}">회원정보 수정</a>
+<br>
+<a href="{% url "accounts:change_password" person.pk %}">비밀번호 변경</a>
+{% endif %}
+{% endblock content %}

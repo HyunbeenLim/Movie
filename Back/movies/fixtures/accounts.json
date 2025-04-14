@@ -1,0 +1,62 @@
+[
+{
+    "model": "accounts.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$64IHEnNGr8EYK2JE5Oey6t$BsgIzrqhIgubzMMXsanw+DvHuv8z3GIHj+RfIetq1PQ=",
+        "last_login": "2024-11-26T20:18:53.969Z",
+        "is_superuser": false,
+        "username": "user1",
+        "first_name": "",
+        "last_name": "",
+        "email": "xoghd14@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-11-26T19:21:52.307Z",
+        "nickname": "민태홍홍",
+        "groups": [],
+        "user_permissions": [],
+        "followings": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$MkSYv0vo4sZvrlSNd14KMK$orYqSLXsuK2SY9ODELAG+Ebdg/qz9CVW5Ewv+yBqxVc=",
+        "last_login": "2024-11-26T20:23:51.040Z",
+        "is_superuser": false,
+        "username": "user2",
+        "first_name": "",
+        "last_name": "",
+        "email": "xoghd32@naver.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-11-26T19:25:07.811Z",
+        "nickname": "임현빈",
+        "groups": [],
+        "user_permissions": [],
+        "followings": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$iH9Ka8RQgrTNQYChSLQGSx$IHnygephRfSxw79QCazL0tqpNRyxQ1w7FciT4gy7ibY=",
+        "last_login": "2024-11-26T19:28:54.665Z",
+        "is_superuser": false,
+        "username": "user3",
+        "first_name": "",
+        "last_name": "",
+        "email": "xoghd47@naver.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-11-26T19:28:54.022Z",
+        "nickname": "혜민아 미쳤다",
+        "groups": [],
+        "user_permissions": [],
+        "followings": []
+    }
+}
+]
